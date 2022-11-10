@@ -1,0 +1,50 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block meta %}
+        <meta charset="UTF-8">
+{#        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>#}
+    {% endblock meta %}
+
+    {% block link %}
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+              crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css" rel="stylesheet"
+              crossorigin="anonymous">
+        <link href="{% static "css/custom.css" %}" rel="stylesheet" type="text/css">
+    {% endblock %}
+    {% block additional_styles %}
+    {% endblock additional_styles %}
+
+    <title>
+        {% block title %}
+        {% endblock title %}
+    </title>
+</head>
+
+<body>
+
+{% block navbar %}
+    {% include "pages/navbar.html" %}
+{% endblock navbar %}
+
+{% comment %}{% block social %}
+    {% include "pages/social-media.html" %}
+{% endblock social %}{% endcomment %}
+
+{% block content %}
+{% endblock content %}
+
+{% block footer %}
+    {% include "pages/footer.html" %}
+{% endblock footer %}
+
+{% block js %}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+            crossorigin="anonymous"></script>
+{% endblock js %}
+
+</body>
+</html>

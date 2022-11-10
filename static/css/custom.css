@@ -1,0 +1,109 @@
+body, html {
+    height: 100%;
+    background-color: #2f2f2f;
+
+}
+
+h1.logo-text{
+    font-size: 7vw;
+}
+
+/* The hero image */
+.hero-image {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/static/img/stony_creek_dam.jfif ");
+
+    /* Set a specific height */
+    height: 100%;
+
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.hero-heading {
+    font-size: 7vw;
+}
+
+.content-image {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/static/img/background.jpg");
+
+    /* Set a specific height */
+    height: 70%;
+
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/* Place text in the middle of the image */
+.content-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.content-heading {
+    font-size: 5vw;
+}
+
+.footer-base {
+    color: white;
+    padding: 50px 50px 50px 50px;
+}
+
+.footer-link{
+    color: white;
+}
+
+a.footer-link:link{
+    overflow: hidden;
+    background-clip: border-box;
+    background: linear-gradient(to right, #c2c2c2, #c2c2c2 50%, #fff 50%) 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    transition: background-position 275ms ease;
+}
+
+a.footer-link:hover{
+    background-position: 0 100%;
+}
+
+.navbar-nav > li {
+    padding-right: 30px;
+}
+
+a.nav-link:link{
+    font-size: 1.8em;
+    overflow: hidden;
+    background-clip: border-box;
+    background: linear-gradient(to right, #c2c2c2, #c2c2c2 50%, #fff 50%) 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    transition: background-position 275ms ease;
+}
+
+a.nav-link:hover {
+    background-position: 0 100%;
+}
+
